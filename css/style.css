@@ -1,9 +1,64 @@
+body{
+    margin: 0;
+}
+
+nav{
+    height: 52px;
+    background-color: rgb(126, 126, 126);
+}
+    /*--------------------------Kod till hamburgar menyn ------------*/
+@media/*kod till hamburgar meny*/{
+
+.burger input {
+    display: none;
+ }
+
+.line_1,.line_2,.line_3{
+    margin-left: 10px;
+    margin-top: 20px;
+    position: absolute;
+    height: 3px;
+    width: 35px;
+    background: rgb(0, 0, 0);
+    border-radius: 9px;
+    transition: .25s ease-in-out;
+}
+
+.line_1{
+    transform: translateY(-4px) scaleX(.88235);
+}
+.line_2{
+    transform: translateY(12px) scaleX(.88235);
+}
+.line_3{
+    transform: translateY(4px) scaleX(.88235);
+}
+.burger_hitbox{
+    position: absolute;
+    height: 30px;
+    width: 35px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 255, 0);
+    margin-top: 11px;
+    margin-left: 10px;
+}
 
 
+input:checked + label .line_1{
+    transform: rotateZ(45deg);
+}
+input:checked + label .line_2{
+    transform: rotateZ(-45deg);
+}
+input:checked + label .line_3{
+    width: 0%;
+    opacity: 0;
+}
+}
 
 
 @media (min-width: 390px){
     body {
-        background-color: aqua
+        background-color: red;
     }
 }
