@@ -1,0 +1,25 @@
+/* make a checkbox that hides a red box if the checkbox is checked with a 1 second transition */
+var checkbox = document.createElement('input');
+checkbox.type = 'checkbox';
+document.body.appendChild(checkbox);
+var redBox = document.createElement('div');
+redBox.style.width = '100px';
+redBox.style.height = '100px';
+redBox.style.backgroundColor = 'red';
+redBox.style.transition = 'opacity 1s';
+document.body.appendChild(redBox);
+checkbox.addEventListener('change', function() {
+  if (checkbox.checked) {
+    redBox.style.opacity = 0;
+  } else {
+    redBox.style.opacity = 1;
+  }
+});
+/* make it so it is in reverse */
+checkbox.addEventListener('change', function() {
+  if (checkbox.checked) {
+    redBox.style.opacity = 1;
+  } else {
+    redBox.style.opacity = 0;
+  }
+});
