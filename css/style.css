@@ -4,7 +4,7 @@ body{
 
 nav{
     height: 52px;
-    background-color: rgb(126, 126, 126);
+    background-color: rgb(26, 26, 26);
 }
 
 
@@ -20,7 +20,7 @@ nav{
     position: absolute;
     height: 3px;
     width: 30px;
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
     border-radius: 9px;
     transition: .25s ease-in-out;
 }
@@ -57,22 +57,34 @@ input:checked + label .line_3{
 }
 }
 
-
-.item_list a:link,a:visited,a:hover,a:active{
-    text-decoration: none;
-    color: white;
+@media/*----------------------kod till dropdown meny-----------------------------*/{
+    li{
+        margin-bottom: 20px;
+    }
+    
+    .item_list a:link,a:visited,a:hover,a:active{
+        text-decoration: none;
+        color: white;
+    }
+    
+    #menu_items{
+        background-color: rgb(26, 26, 26);
+        height: 50vh;
+    }
+    
+    .item_list{
+        text-align: left;
+        margin: 0;
+        list-style: none;
+        color: white;
+        font-size: 2rem;
+    }
+    
+    
 }
 
-#menu_items{
-    background-color: black;
-    height: 50vh;
-}
 
-.item_list{
-    margin: 0;
-    list-style: none;
-    color: white;
-}
+
 
 @media (min-width: 391px){
 
