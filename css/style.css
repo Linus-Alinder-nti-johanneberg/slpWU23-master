@@ -69,7 +69,7 @@ input:checked + label .line_3{
     
     #menu_items{
         background-color: rgb(26, 26, 26);
-        height: 50vh;
+        height: 40vh;
     }
     
     .item_list{
@@ -80,10 +80,54 @@ input:checked + label .line_3{
         font-size: 2rem;
     }
     
-    
+    .active{
+        text-decoration: underline !important;
+        text-underline-offset: 8px;
+    }
+}
+
+.card {
+    margin-left: 10%;
+    margin-top: 2px;
+    width: 240px;
+    height: 440px;
+    border-radius: 20px;
+    background: #ffffff;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid;
+    border-color: #008bf8;
 }
 
 
+.card_button {
+transform: translate(-50%, 50%);
+ width: 60%;
+ border-radius: 1rem;
+ border: none;
+ background-color: #008bf8;
+ color: #fff;
+ font-size: 1rem;
+ padding: .5rem 1rem;
+ position: absolute;
+ left: 50%;
+ bottom: 0;
+}
+.card_button:hover {
+    cursor: pointer;
+}
+
+.container{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+.section{
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+
+}
 
 
 @media (min-width: 391px){

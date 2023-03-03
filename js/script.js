@@ -10,3 +10,4 @@ checkbox.addEventListener('click', function handleClick() {
         menu_items.style.display = 'none';
     }
   });
+  
