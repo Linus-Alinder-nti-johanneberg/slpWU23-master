@@ -1,20 +1,24 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
-nav{
-    height: 52px;
-    background-color: rgb(26, 26, 26);
+.no_scroll {
+  overflow-y: hidden;
 }
 
+nav {
+  height: 52px;
+  background-color: rgb(26, 26, 26);
+}
 
-@media/*----------------------kod till hamburgar meny-----------------------------*/{
-
-.burger input {
+@media /*----------------------kod till hamburgar meny-----------------------------*/ {
+  .burger input {
     display: none;
- }
+  }
 
-.line_1,.line_2,.line_3{
+  .line_1,
+  .line_2,
+  .line_3 {
     margin-left: 10px;
     margin-top: 20px;
     position: absolute;
@@ -22,19 +26,19 @@ nav{
     width: 30px;
     background: rgb(255, 255, 255);
     border-radius: 9px;
-    transition: .25s ease-in-out;
-}
+    transition: 0.25s ease-in-out;
+  }
 
-.line_1{
-    transform: translateY(-5px) scaleX(.88235);
-}
-.line_2{
-    transform: translateY(15px) scaleX(.88235);
-}
-.line_3{
-    transform: translateY(5px) scaleX(.88235);
-}
-.burger_hitbox{
+  .line_1 {
+    transform: translateY(-5px) scaleX(0.88235);
+  }
+  .line_2 {
+    transform: translateY(15px) scaleX(0.88235);
+  }
+  .line_3 {
+    transform: translateY(5px) scaleX(0.88235);
+  }
+  .burger_hitbox {
     position: absolute;
     height: 30px;
     width: 31px;
@@ -42,97 +46,115 @@ nav{
     background-color: rgba(0, 0, 255, 0);
     margin-top: 11px;
     margin-left: 10px;
-}
+  }
 
-
-input:checked + label .line_1{
+  input:checked + label .line_1 {
     transform: rotateZ(45deg);
-}
-input:checked + label .line_2{
+  }
+  input:checked + label .line_2 {
     transform: rotateZ(-45deg);
-}
-input:checked + label .line_3{
+  }
+  input:checked + label .line_3 {
     width: 0%;
     opacity: 0;
-}
+  }
 }
 
-@media/*----------------------kod till dropdown meny-----------------------------*/{
-    li{
-        margin-bottom: 20px;
-    }
-    
-    .item_list a:link,a:visited,a:hover,a:active{
-        text-decoration: none;
-        color: white;
-    }
-    
-    #menu_items{
-        background-color: rgb(26, 26, 26);
-        height: 40vh;
-    }
-    
-    .item_list{
-        text-align: left;
-        margin: 0;
-        list-style: none;
-        color: white;
-        font-size: 2rem;
-    }
-    
-    .active{
-        text-decoration: underline !important;
-        text-underline-offset: 8px;
-    }
+@media /*----------------------kod till dropdown meny-----------------------------*/ {
+  li {
+    margin-bottom: 20px;
+  }
+
+  .item_list a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration: none;
+    color: white;
+  }
+
+  #menu_items {
+    background-color: rgb(26, 26, 26);
+    height: 40vh;
+  }
+
+  .item_list {
+    text-align: left;
+    margin: 0;
+    list-style: none;
+    color: white;
+    font-size: 2rem;
+  }
+
+  .active {
+    text-decoration: underline !important;
+    text-underline-offset: 8px;
+  }
+}
+
+.container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.section {
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .card {
-    margin-left: 10%;
-    margin-top: 2px;
-    width: 240px;
-    height: 440px;
-    border-radius: 20px;
-    background: #ffffff;
-    position: relative;
-    padding: 1.8rem;
-    border: 2px solid;
-    border-color: #008bf8;
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 250px;
+  height: 455px;
+  border-radius: 20px;
+  background: #ffffff;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid;
+  border-color: #008bf8;
 }
-
 
 .card_button {
-transform: translate(-50%, 50%);
- width: 60%;
- border-radius: 1rem;
- border: none;
- background-color: #008bf8;
- color: #fff;
- font-size: 1rem;
- padding: .5rem 1rem;
- position: absolute;
- left: 50%;
- bottom: 0;
+  transform: translate(-50%, 50%);
+  width: 60%;
+  border-radius: 1rem;
+  border-color: rgba(0, 0, 0, 0);
+  background-color: #008bf8;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
 }
 .card_button:hover {
-    cursor: pointer;
+  width: 62%;
+  height: 8%;
+  border-color: rgb(113, 113, 113);
+}
+.h1_mp {
+  height: 30px;
+  text-align: center;
+  margin-top: 10px;
 }
 
-.container{
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+.card_button:hover {
+  cursor: pointer;
 }
-.section{
-    height: 100vh;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-
+.exempl_bild {
+  height: 150px;
+  width: 250px;
 }
 
+more_text {
+  display: none;
+}
 
-@media (min-width: 391px){
-
-    body {
-        background-color: red;
-    }
+@media (min-width: 391px) {
+  body {
+    background-color: red;
+  }
 }
