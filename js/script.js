@@ -11,15 +11,55 @@ checkbox.addEventListener('click', function handleClick() {
     }
 });
   
-const div1 = document.getElementById('more_text');
-var button = document.getElementById('show_more');
-button.addEventListener('click', toggle);
-more_text.style.display = 'none';
 
-function toggle(){
-    if (more_text.style.display == 'none') {
-        more_text.style.display = 'block';
+const div1 = document.getElementById('more_text1');
+var button = document.getElementById('show_more1');
+button.addEventListener('click', toggle1);
+more_text1.style.display = 'none';
+
+function toggle1(){
+    if (more_text1.style.display == 'none') {
+        more_text1.style.display = 'block';
       } else {
-        more_text.style.display = 'none';
+        more_text1.style.display = 'none';
+      }
+};
+
+const div2 = document.getElementById('more_text2');
+var button2 = document.getElementById('show_more2');
+button2.addEventListener('click', toggle2);
+more_text2.style.display = 'none';
+
+function toggle2(){
+    if (more_text2.style.display == 'none') {
+        more_text2.style.display = 'block';
+      } else {
+        more_text2.style.display = 'none';
+      }
+};
+
+const div3 = document.getElementById('more_text3');
+var button3 = document.getElementById('show_more3');
+button3.addEventListener('click', toggle3);
+more_text3.style.display = 'none';
+
+function toggle3(){
+    if (more_text3.style.display == 'none') {
+        more_text3.style.display = 'block';
+      } else {
+        more_text3.style.display = 'none';
+      }
+};
+
+const div4 = document.getElementById('more_text4');
+var button4 = document.getElementById('show_more4');
+button4.addEventListener('click', toggle4);
+more_text4.style.display = 'none';
+
+function toggle4(){
+    if (more_text4.style.display == 'none') {
+        more_text4.style.display = 'block';
+      } else {
+        more_text4.style.display = 'none';
       }
 };
