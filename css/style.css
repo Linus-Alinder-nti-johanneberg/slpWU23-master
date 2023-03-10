@@ -76,6 +76,10 @@ nav {
   #menu_items {
     background-color: rgb(26, 26, 26);
     height: 40vh;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+  
   }
 
   .item_list {
@@ -91,6 +95,8 @@ nav {
     text-underline-offset: 8px;
   }
 }
+@media /*----------------------kod till projek sida-----------------------------*/{
+  
 
 .container {
   height: 100vh;
@@ -168,12 +174,10 @@ iframe {
   height: 7800px;
   border: 0px;
   zoom: 0.16;
-  -moz-transform: scale(0.16);
-  -moz-transform-origin: 0 0;
-  -o-transform: scale(0.16);
-  -o-transform-origin: 0 0;
-  -webkit-transform: scale(0.16);
-  -webkit-transform-origin: 0 0;
+  transform: scale(0.16);
+  transform-origin: 0 0;
+  transform: scale(0.16);
+  transform-origin: 0 0;
 }
 #wrap {
   width: 295px;
@@ -189,6 +193,26 @@ iframe {
     zoom: 1;
   }
 }
+}
+
+.h1_ss{
+  text-align: center;
+}
+
+.socials{
+    display:flex;
+    flex-direction: row;
+}
+.socials .icon{
+  width: auto;
+}
+
+.icon img{
+  display:flex;
+  width: 48px;
+  margin: 10px;
+}
+
 
 @media (min-width: 391px) {
   body {
