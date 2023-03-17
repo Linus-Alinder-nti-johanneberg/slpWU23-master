@@ -1,4 +1,5 @@
-body {
+
+  body {
   margin: 0;
 }
 
@@ -6,9 +7,17 @@ body {
   overflow-y: hidden;
 }
 
-nav {
+nav{
+
   height: 52px;
+  width: 100vw;
   background-color: rgb(26, 26, 26);
+  z-index: 10;
+  position:fixed;
+  left: 0px;
+  top: 0px;
+ 
+
 }
 
 @media /*----------------------kod till hamburgar meny-----------------------------*/ {
@@ -74,6 +83,7 @@ nav {
   }
 
   #menu_items {
+    top: 52px;
     background-color: rgb(26, 26, 26);
     height: 40vh;
     z-index: 10;
@@ -197,22 +207,50 @@ iframe {
 
 .h1_ss{
   text-align: center;
+  margin-top: 20px;
 }
 
 .socials{
     display:flex;
     flex-direction: row;
+    justify-content: center;
 }
 .socials .icon{
-  width: auto;
+  display: flex;
+  width: 48px;
+  height: 50px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.icon img:hover{
+  display:flex;
+  width: 53px;
+  margin: 10px;
 }
 
 .icon img{
   display:flex;
   width: 48px;
   margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+section{ 
+  margin-top: 50px;
+  background-color: rgb(175, 175, 255);
+  border-radius: 4px;
+  width: 90vw;
+  height: 22vh;
+
 }
 
+.section_holder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 
 @media (min-width: 391px) {
   body {
