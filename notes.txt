@@ -43,3 +43,6 @@ document.getElementById('handle').onclick = function () {
 }
 <button id="handle">Fade</button> 
 <div id="slideSource">Whatever you want here - images or text</div>
+
+// email contact box html?
+
