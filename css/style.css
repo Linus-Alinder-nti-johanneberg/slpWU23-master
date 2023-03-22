@@ -113,14 +113,15 @@ nav{
 }
 
 .section {
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  height: 90vh;
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
 
 .card {
-  margin: 0 auto;
-  margin-top: 5px;
+  margin-top: 30px;
   width: 250px;
   height: 455px;
   border-radius: 20px;
@@ -249,34 +250,6 @@ section{
   padding: 20px;
   padding-bottom: 0;
 }
-
-.contact_form{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px;
-  background-color: #3e7da4;
-  margin: 20px;
-
-  border-radius:4px;
-  height: 200px;
-}
-.h1_kon{
-  position: relative;
-  margin-top:-10px
-}
-form{
-  margin-top: -8px;
-  width: 300px;
-  display: flex;
-  justify-items: center;
-  flex-direction: column;
-}
-textarea {
-  width: 294px;
-  height: 80px;
-}
 .email{
   display: flex;
   justify-content: center;
@@ -292,6 +265,50 @@ textarea {
   text-decoration: none;
 
 }
+
+.contact_form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #3e7da4;
+  margin: 20px;
+  border-radius:4px;
+  height: 220px;
+}
+
+.h1_kon{
+  position: relative;
+  margin-top:-16px;
+}
+form{
+  margin-top: -16px;
+  width: 300px;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+}
+textarea {
+  margin: 4px;
+  width: 286px;
+  height: 80px;
+  border-radius: 4px;
+}
+
+input{
+  margin:4px;
+  width: 284px;
+  border-radius: 4px;
+}
+
+.contact_form button{
+  margin-top: 4px;
+  margin-left: 4px;
+  width: 293px;
+  border-radius: 4px;
+}
+
 
 @media (min-width: 391px) {
   body {
