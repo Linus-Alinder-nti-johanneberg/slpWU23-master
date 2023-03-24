@@ -104,7 +104,7 @@ nav{
   }
 }
 @media /*----------------------kod till projek sida-----------------------------*/{
-  
+
 
 .container {
   height: 100vh;
@@ -130,6 +130,7 @@ nav{
   padding: 1.8rem;
   border: 2px solid;
   border-color: #3e7da4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .card_button {
@@ -144,6 +145,7 @@ nav{
   position: absolute;
   left: 50%;
   bottom: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .card_button:hover {
   width: 62%;
@@ -178,32 +180,67 @@ nav{
   border-color: #3e7da4;
 }
 
-iframe {
-  width: 11500px;
-  height: 7800px;
-  border: 0px;
-  zoom: 0.16;
-  transform: scale(0.16);
-  transform-origin: 0 0;
-  transform: scale(0.16);
-  transform-origin: 0 0;
-}
-#wrap {
-  width: 295px;
-  height: 300px;
-  padding: 0;
-  overflow: hidden;
-  position: absolute;
-  left: 6px;
-  top: 15px;
-}
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  #wrap {
-    zoom: 1;
-  }
-}
 }
 
+.timeline {
+  position: relative;
+  margin: 50px 0;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.timeline-icon {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  font-size: 28px;
+  color: #fff;
+  background-color: #3e7da4;
+  border-radius: 50%;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-content {
+  margin-top: 80px;
+  position: relative;
+  margin-left: 75px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 220px;
+  max-height: 300px;
+}
+
+.timeline-title {
+  margin: 0;
+  font-size: 24px;
+  color: #3e7da4;
+}
+
+.timeline-description {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.timeline-date {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+  color: #3e7da4;
+}
+  
+
+
+@media /*----------------------kod till kontakt sida-----------------------------*/ {
+  
 .h1_ss{
   text-align: center;
 }
@@ -240,6 +277,7 @@ section{
   border-radius: 4px;
   width: 3900px;
   height: 150px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
 }
 
@@ -258,6 +296,7 @@ section{
   margin: 20px;
   border-radius: 4px;
   height: 38px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .email p{
   display: flex;
@@ -276,6 +315,7 @@ section{
   margin: 20px;
   border-radius:4px;
   height: 220px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .h1_kon{
@@ -308,7 +348,7 @@ input{
   width: 293px;
   border-radius: 4px;
 }
-
+}
 
 @media (min-width: 391px) {
   body {
