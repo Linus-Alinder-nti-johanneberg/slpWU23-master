@@ -63,3 +63,29 @@ function toggle4(){
         more_text4.style.display = 'none';
       }
 };
+
+const div5 = document.getElementById('more_text5');
+var button5 = document.getElementById('show_more5');
+button5.addEventListener('click', toggle5);
+more_text5.style.display = 'none';
+
+function toggle5(){
+    if (more_text5.style.display == 'none') {
+        more_text5.style.display = 'block';
+      } else {
+        more_text5.style.display = 'none';
+      }
+};
+
+const div6 = document.getElementById('more_text6');
+var button6 = document.getElementById('show_more6');
+button6.addEventListener('click', toggle6);
+more_text6.style.display = 'none';
+
+function toggle6(){
+    if (more_text6.style.display == 'none') {
+        more_text6.style.display = 'block';
+      } else {
+        more_text6.style.display = 'none';
+      }
+};
