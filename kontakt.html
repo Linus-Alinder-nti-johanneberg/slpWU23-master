@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,45 +14,61 @@
         <div class="burger">
             <input type="checkbox" id="burger" name="burger">
             <label class="burger" for="burger">
-                <div class="line_1"></div>
-                <div class="line_2"></div>
-                <div class="line_3"></div>
-                <div class="burger_hitbox"></div>
+                <span class="line_1"></span>
+                <span class="line_2"></span>
+                <span class="line_3"></span>
+                <span class="burger_hitbox"></span>
             </label>
+        </div>
+        <div id="menu_items_pc">
+            <ul class="item_list_pc">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="om_mig.html">Om mig</a></li>
+                <li><a href="Projekt.html">Projekt</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            </ul>
         </div>
     </nav>
     <div id="menu_items">
         <ul class="item_list">
-           <a href="index.html"> <li>Hem</li></a>
-           <a href="om_mig.html"> <li>Om mig</li></a>
-           <a href="Projekt.html"> <li>Projekt</li></a>
-           <a href="kontakt.html" class="active"> <li>Kontakt</li></a>       
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="om_mig.html">Om mig</a></li>
+            <li><a href="Projekt.html">Projekt</a></li>
+            <li><a href="kontakt.html" class="active">Kontakt</a></li>
         </ul>
     </div>
     <div class="section_holder">
         <section>
             <h1 class="h1_ss">Sociala sidor</h1>
             <div class="socials">
-                <a class="icon" href=""><img src="img/Facebook_logo_icon.png" alt=""></a>
-                <a class="icon" href=""><img src="img/instagram_logo_icon.png" alt=""></a>
-                <a class="icon" href=""><img src="img/linkedin_icon.png" alt=""></a>
-                <a class="icon" href=""><img src="img/github_icon.png" alt=""></a>
-            </div>  
+                <a class="icon" href="https://facebook.com" target="_blank"><img src="img/facebook_logo_icon_vit.png"
+                        alt="min facebook"></a>
+                <a class="icon" href="https://www.instagram.com" target="_blank"><img
+                        src="img/instagram_logo_icon_vit.png" alt=" min instagram"></a>
+                <a class="icon" href="https://www.linkedin.com" target="_blank"><img src="img/linkedin_icon_vit.png"
+                        alt="min linkedin"></a>
+                <a class="icon" href="https://www.github.com/" target="_blank"><img src="img/github_icon_vit.png"
+                        alt="min github"></a>
+            </div>
         </section>
-    </div>       
-    <div class="email">
-        <p>Email: Linus.alinder@elev.ga.nitg.se</p>
+        <div class="email">
+            <p><b>Email: Linus.alinder@elev.ga.nitg.se</b></p>
+        </div>
     </div>
-
-    <div class="contact_form">
-        <h1 class="h1_kon">Kontakta</h1>
-        <form method="post" action="mailto:linus.alinder@elev.ga.nitg.se" method="post"enctype="text/plain">
-            <input name="readername" type="text" placeholder="Ditt namn" required/>
-            <input name="readeremail" type="email" placeholder="exempel@mail.com" required/>
-            <textarea name="message" placeholder="Meddelande" required></textarea>
-            <button type="submit">Skicka meddelande</button>
-        </form>
+    <div class="cent">
+        <div class="contact_form">
+            <h1 class="h1_kon">Kontakta</h1>
+            <form method="post" action="mailto:linus.alinder@elev.ga.nitg.se" enctype="text/plain">
+                <div class="form_input">
+                    <input name="readername" type="text" placeholder="Ditt namn" required />
+                    <input name="readeremail" type="email" placeholder="exempel@mail.com" required />
+                </div>
+                <textarea name="message" placeholder="Meddelande" required></textarea>
+                <button type="submit">Skicka meddelande</button>
+            </form>
+        </div>
     </div>
 </body>
-<script src="js/script.js" ></script>
+<script src="js/script.js"></script>
+
 </html>

@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+#menu_items_pc{
+  display: none;
+}
+
 .no_scroll {
   overflow-y: hidden;
 }
@@ -15,9 +19,10 @@ nav{
   position:fixed;
   left: 0px;
   top: 0px;
+
 }
 
-@media/*-----------------------kod till landingpage---------------------------------*/{
+/*-----------------------kod till landingpage---------------------------------*/
   .intro{
     display: flex;
     margin-top: 60px;
@@ -26,25 +31,26 @@ nav{
     margin-top: 20px;
     margin-left: 50px;
     height: 140px;
+    width: 140px;
     border-radius: 4px;
     border: 3px solid;
-    border-color: #3e7da4;
+    border-color: #0A6178;
   }
 
   .my_name{
     text-align: center;
     margin-top: 55px;
     margin-left: 30px;
-    color:#3e7da4;
+    color:#0A6178;
   }
   .about_me{
     margin: 10px;
     text-align: center;
-    color:#3e7da4;
+    color:#0A6178;
   }
-}
 
-@media /*----------------------kod till hamburgar meny-----------------------------*/ {
+
+/*----------------------kod till hamburgar meny-----------------------------*/ 
   .burger input {
     display: none;
   }
@@ -91,10 +97,18 @@ nav{
     width: 0%;
     opacity: 0;
   }
-}
-@media /*----------------------kod till dropdown meny-----------------------------*/ {
-  li {
-    margin-bottom: 20px;
+
+
+/*----------------------kod till dropdown meny-----------------------------*/ 
+ 
+  ul{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+  }
+
+li {
+  margin-top: 15px;
   }
 
   .item_list a:link,
@@ -116,7 +130,7 @@ nav{
 
   .item_list {
     text-align: left;
-    margin: 0;
+    margin-top: -10px;
     list-style: none;
     color: white;
     font-size: 2rem;
@@ -126,8 +140,71 @@ nav{
     text-decoration: underline !important;
     text-underline-offset: 8px;
   }
-}
-@media /*----------------------kod till projek sida-----------------------------*/{
+
+
+/*----------------------kod till om mig-----------------------------*/
+
+  .h1_ku {
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: -30px;
+    color: #0A6178;
+  }
+  .timeline {
+    position: relative;
+    margin: 50px 0;
+    margin-top: 70px;
+  }
+  
+  .timeline_box {
+    position: relative;
+    margin-bottom: 80px;
+    margin-right: 10%;
+
+  }
+  
+  .marker{
+    position: absolute;
+    width: 40px;
+    height: 14px;
+    text-align: center;
+    background-color: #0A6178;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .timeline-content {
+    margin-top: 80px;
+    position: relative;
+    margin-left: 75px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 220px;
+    max-height: 1000px;
+  }
+  
+  .timeline_title {
+    margin: 0;
+    font-size: 24px;
+    color: #0A6178;
+  }
+  
+  .timeline_text {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  
+  .date {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 16px;
+    color: #000000;
+  }
+  
+/*----------------------kod till projek sida-----------------------------*/
 
 
 .container {
@@ -155,7 +232,7 @@ nav{
   position: relative;
   padding: 1.8rem;
   border: 2px solid;
-  border-color: #3e7da4;
+  border-color: #0A6178;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -164,7 +241,7 @@ nav{
   width: 60%;
   border-radius: 1rem;
   border-color: rgba(0, 0, 0, 0);
-  background-color:#3e7da4;
+  background-color:#0A6178;
   color: #fff;
   font-size: 1rem;
   padding: 0.5rem 1rem;
@@ -182,7 +259,7 @@ nav{
   height: 18px;
   text-align: center;
   margin-top: 60px;
-  color: #3e7da4;
+  color: #0A6178;
 }
 
 .card_button:hover {
@@ -193,7 +270,7 @@ nav{
   width: 250px;
 }
 
-.card1_backside,.card2_backside,.card3_backside,.card4_backside,.card5_backside,.card6_backside{
+.card1_backside,.card2_backside,.card3_backside,.card4_backside,.card5_backside,.card6_backside,.card7_backside,.card8_backside{
   margin: 0 auto;
   width: 250px;
   height: 455px;
@@ -204,82 +281,26 @@ nav{
   background: #ffffff;
   padding: 1.8rem;
   border: 2px solid;
-  border-color: #3e7da4;
+  border-color: #0A6178;
 }
 
-}
 
-.h1_ku {
-  text-align: center;
-  margin-bottom: -30px;
-  color: #3e7da4;
-}
-.timeline {
-  position: relative;
-  margin: 50px 0;
-  margin-top: 70px;
-}
 
-.timeline_box {
-  position: relative;
-  margin-bottom: 80px;
-}
 
-.marker{
-  position: absolute;
-  width: 40px;
-  height: 14px;
-  text-align: center;
-  font-size: 28px;
-  background-color: #3e7da4;
-  margin: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.timeline-content {
-  margin-top: 80px;
-  position: relative;
-  margin-left: 75px;
-  padding: 20px;
-  background-color: #f4f4f4;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  max-width: 220px;
-  max-height: 300px;
-}
-
-.timeline_title {
-  margin: 0;
-  font-size: 24px;
-  color: #3e7da4;
-}
-
-.timeline_text {
-  margin-top: 20px;
-  font-size: 16px;
-  color: #666;
-  line-height: 1.4;
-}
-
-.date {
-  position: absolute;
-  top: 8px;
-  right: 10px;
-  font-size: 16px;
-  color: #3e7da4;
-}
-
-@media /*----------------------kod till kontakt sida-----------------------------*/ {
+/*----------------------kod till kontakt sida-----------------------------*/
   
 .h1_ss{
   text-align: center;
+  color: #fff;
 }
 
 .socials{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .socials .icon{
+
   display: flex;
   width: 48px;
   height: 50px;
@@ -289,20 +310,23 @@ nav{
 }
 .icon img:hover{
   display:flex;
+  height: 53px;
   width: 53px;
   margin: 10px;
 }
 
 .icon img{
+
   display:flex;
   width: 48px;
+  height: 48px;
   margin: 10px;
   justify-content: center;
   align-items: center;
 }
 section{ 
   margin-top: 50px;
-  background-color: #3e7da4;
+  background-color: #0A6178;
   border-radius: 4px;
   width: 3900px;
   height: 150px;
@@ -312,42 +336,41 @@ section{
 
 .section_holder{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  padding-bottom: 0;
 }
 .email{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3e7da4;
-  margin: 20px;
+  background-color: #0A6178;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
   height: 38px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  margin-top: 20px;
 }
 .email p{
-  display: flex;
-  color: black;
+  color: #fff;
   text-decoration: none;
-
 }
 
 .contact_form{
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 20px;
-  background-color: #3e7da4;
+  background-color: #0A6178;
   margin: 20px;
+  margin-top: 0;
   border-radius:4px;
-  height: 220px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .h1_kon{
+  color: #fff;
   position: relative;
   margin-top:-16px;
 }
@@ -363,6 +386,8 @@ textarea {
   width: 286px;
   height: 80px;
   border-radius: 4px;
+  resize: vertical;
+  max-height: 500px;
 }
 
 input{
@@ -377,12 +402,184 @@ input{
   width: 293px;
   border-radius: 4px;
 }
+
+
+/*mediaquey för större displayer*/
+@media (min-width: 550px) {
+
+  /*Kod till nav meny*/
+  .burger{
+    display: none;
+  }
+  #menu_items{
+    display: none;
+  }
+  #menu_items_pc{
+    display: block;
+  }
+  .item_list_pc a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration: none;
+    color: white;
+  }
+  .item_list_pc {
+    margin-top: 5px;
+    text-align: center;
+    list-style: none;
+    color: white;
+    font-size: 2rem;
+  }
+  ul{
+    flex-direction: row;
+    justify-content: center;
+  }
+  li{
+    margin-left: 3%;
+    margin-top: 0;
+  }
+  /*kod till landigpage*/
+.break{
+  display:none;
 }
 
-@media (min-width: 391px) {
-  body {
-    background-color: red;
+  .intro{
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-top: 60px;
   }
+  .intro img{
+    margin-top: -10px;
+    height: 300px;
+    width: 300px;
+  }
+
+  .my_name{
+    font-size: xx-large;
+  }
+  .about_me{
+    font-size: x-large;
+  }
+  .running{
+    height: 45px;
+    width: 45px;
+  }
+  .book{
+    height: 35px;
+    width: 35px;
+
+  }
+
+  /* kod till om mig*/
+
+  .timeline_box {
+    display: flex;
+    margin-left: 20%;
+    margin-right:20% ;
+    margin-top:100px;
+  }
+  
+  .marker{
+    margin-top:-15px;
+  }
+
+  
+  .timeline-content {
+    max-width: 1000px;
+    max-height: 10000px;
+    margin-top: -35px;
+  }
+
+  /* kod till projekt sida*/
+  .container {
+    display: flex;   
+    flex-wrap: wrap; 
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .section {
+    display: flex;
+    height: 100vh;
+    flex-basis:20%;
+    margin: 1%;
+  }
+  
+  .card {
+    margin-top:20%;
+
+  }
+  .new_line{
+    font-size: 0;
+  }
+  /*kod till kontakt*/
+  
+  .h1_ss{
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  section{ 
+    width: 40%;
+    height: 180px;
+    margin-right: 20px;
+  }
+  
+  .section_holder{
+    flex-direction: row;
+    margin-top:3%;
+  }
+
+  .email{
+    height: 180px;
+    width: 40%;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+  .email p{
+    color: #fff;
+    font-size: 2rem;
+  }
+  
+  .contact_form{
+    margin-top:20px;
+    width: 78.4%;
+  }
+  .cent{
+    display: flex;
+    justify-content: center;
+  }
+
+  form{
+    width: auto;
+    height: auto;
+    flex-direction: column; 
+  }
+  textarea {
+    font-size: larger;
+    width: 98%;
+    height: 17vh;
+  }
+  .form_input{
+    display: flex;
+    flex-direction: row; 
+  }
+  input{
+    font-size: larger;
+    height:4vh;
+    width:20vw;
+  }
+  
+  .contact_form button{
+    font-size: larger;
+    width: 100%;
+    height:4vh ;
+  }
+
+  
 }
 
 

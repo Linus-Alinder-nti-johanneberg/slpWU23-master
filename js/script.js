@@ -6,6 +6,7 @@ menu_items.style.display = 'none';
 checkbox.addEventListener('click', function handleClick() {
     if (checkbox.checked) {
         menu_items.style.display = 'block';
+
     } else {
         menu_items.style.display = 'none';
     }
@@ -87,5 +88,31 @@ function toggle6(){
         more_text6.style.display = 'block';
       } else {
         more_text6.style.display = 'none';
+      }
+};
+
+const div7 = document.getElementById('more_text7');
+var button7 = document.getElementById('show_more7');
+button7.addEventListener('click', toggle7);
+more_text7.style.display = 'none';
+
+function toggle7(){
+    if (more_text7.style.display == 'none') {
+        more_text7.style.display = 'block';
+      } else {
+        more_text7.style.display = 'none';
+      }
+};
+
+const div8 = document.getElementById('more_text8');
+var button8 = document.getElementById('show_more8');
+button8.addEventListener('click', toggle8);
+more_text8.style.display = 'none';
+
+function toggle8(){
+    if (more_text8.style.display == 'none') {
+        more_text8.style.display = 'block';
+      } else {
+        more_text8.style.display = 'none';
       }
 };
