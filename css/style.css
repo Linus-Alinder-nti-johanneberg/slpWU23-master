@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  font-family: 'Roboto', sans-serif;
+ }
 
 body {
   margin: 0;
@@ -369,7 +373,7 @@ section{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.h1_kon{
+.h2_kon{
   color: #fff;
   position: relative;
   margin-top:-16px;
